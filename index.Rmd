@@ -1,8 +1,15 @@
 ---
+<<<<<<< HEAD
 title       : Practicando R
 subtitle    : Inicio
 author      : Arturo Chian
 job         : UNMSM
+=======
+title       : Interactive Visualizations
+subtitle    : rCharts, UseR 2014ss
+author      : Ramnath Vaidyanathan (@ramnath_vaidya)
+job         : McGill University
+>>>>>>> origin/gh-pages
 --- .nobackground .quote
 
 <q>R es lo máximo.</q>
