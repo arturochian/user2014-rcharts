@@ -1,6 +1,6 @@
 ---
 title       : Interactive Visualizations
-subtitle    : rCharts, UseR 2014
+subtitle    : rCharts, UseR 2014ss
 author      : Ramnath Vaidyanathan (@ramnath_vaidya)
 job         : McGill University
 --- .nobackground .quote
@@ -82,13 +82,38 @@ map</textarea>
 ```r
 rmeetups = readRDS('data/rmeetups.rds')
 L1 <- Mapbox2()
+```
+
+## Error: could not find function "Mapbox2"
+
+
+```r
 L1$set(width = 1600, height = 800, dom = 'map', map_id = 'ramnathv.i2lkbedb')
+```
+
+## Error: object 'L1' not found
+
+
+```r
 L1$setView(c(-30, 130), 2)
+```
+
+## Error: object 'L1' not found
+
+
+```r
 L1$set(geojson = toGeoJSON(rmeetups), hover = TRUE)
+```
+
+## Error: object 'L1' not found
+
+
+```r
 L1
 ```
 
-<iframe src=' assets/fig/unnamed-chunk-8.html ' scrolling='no' frameBorder='0' seamless class='rChart mapbox2 ' id=iframe- map ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+## Error: object 'L1' not found
+
 
 
 ---
@@ -102,7 +127,8 @@ library(rMaps)
 ichoropleth(Crime ~ State, data = violent_crime, animate = "Year")
 ```
 
-<iframe src=' assets/fig/unnamed-chunk-9.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart17825053c1f3 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+## Error: object 'opts_current' not found
+
 
 
 ---
@@ -125,7 +151,8 @@ d1 <- crosslet(
 d1
 ```
 
-<iframe src=' assets/fig/unnamed-chunk-11.html ' scrolling='no' frameBorder='0' seamless class='rChart crosslet ' id=iframe- chart17822ae261b8 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+## Error: object 'opts_current' not found
+
 
 
 --- .segue .nobackground
@@ -192,6 +219,7 @@ server = function(input, output){
 
 ## Interactive Chart with Shiny Controls
 
+Loading required package: shiny
 <div class="row-fluid">
   <div class="span4">
     <form class="well">
@@ -314,7 +342,7 @@ uvcharts:
 ## Data
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Tue Jul  1 13:38:44 2014 -->
+<!-- Thu Sep 04 00:31:43 2014 -->
 <TABLE border=1>
 <TR> <TH>  </TH> <TH> Hair </TH> <TH> Eye </TH> <TH> Sex </TH> <TH> Freq </TH>  </TR>
   <TR> <TD align="right"> 1 </TD> <TD> Black </TD> <TD> Brown </TD> <TD> Male </TD> <TD align="right"> 32.00 </TD> </TR>
